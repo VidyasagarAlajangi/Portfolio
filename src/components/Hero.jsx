@@ -211,7 +211,7 @@ const Hero = () => {
           letterSpacing: '-0.04em',
         }}
       >
-        2025
+        2026
       </div>
 
       {/* ── Centre block: tag + name — fills viewport height ── */}
@@ -247,7 +247,7 @@ const Hero = () => {
             display: 'inline-block',
             flexShrink: 0,
           }} />
-          Full-Stack Developer &amp; CS Graduate
+          Full-Stack Developer &amp; AI Systems Architect
         </div>
 
         {/* Hero name — chars injected by GSAP */}
@@ -293,8 +293,7 @@ const Hero = () => {
           lineHeight: 1.85,
           margin: 0,
         }}>
-          Building AI-powered, full-stack systems that solve real problems —<br />
-          from blockchain certificate platforms to telehealth with 87% chatbot accuracy.
+          Architecting scalable full-stack ecosystems where AI meets infrastructure. From immutable blockchain ledgers to AI-powered clinical triage, I build for impact and measurement.
         </p>
 
         {/* Right — buttons + scroll hint */}

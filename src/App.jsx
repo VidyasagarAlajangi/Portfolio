@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
@@ -9,12 +9,14 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Loader from './components/Loader';
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function App() {
   const curRef = useRef(null);
   const ringRef = useRef(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const cur = curRef.current;
@@ -69,23 +71,29 @@ export default function App() {
         el.removeEventListener('mouseleave', leaveFn);
       });
     };
-  }, []);
+  }, [loading]); // Re-attach listeners after loading is false and elements are mounted
 
   return (
     <>
-      {/* Custom cursor */}
-      <div id="cur" ref={curRef} />
-      <div id="cur-ring" ref={ringRef} />
+      {loading && <Loader onComplete={() => setLoading(false)} />}
 
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
+      {/* Custom cursor */}
+      <div id="cur" ref={curRef} style={{ display: loading ? 'none' : 'block' }} />
+      <div id="cur-ring" ref={ringRef} style={{ display: loading ? 'none' : 'block' }} />
+
+      {!loading && (
+        <>
+          <Navbar />
+          <main>
+            <Hero />
+            <About />
+            <Skills />
+            <Projects />
+            <Contact />
+          </main>
+          <Footer />
+        </>
+      )}
     </>
   );
 }

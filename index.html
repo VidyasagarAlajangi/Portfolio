@@ -6,6 +6,23 @@
   <link rel="icon" type="image/png" href="/logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>vidyasagar</title>
+  <style>
+    /* Prevent Flash of Unstyled Content (FOUC) and set initial theme */
+    :root {
+      --ink: #1C0F08;
+    }
+    body {
+      background-color: var(--ink);
+      margin: 0;
+    }
+    #root {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    #root:not(:empty) {
+      opacity: 1;
+    }
+  </style>
 </head>
 
 <body>

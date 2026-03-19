@@ -76,20 +76,19 @@ const About = () => {
             className="font-serif font-black text-ink mb-6"
             style={{ fontSize: 'clamp(2rem,5vw,4.5rem)', lineHeight: 0.95, letterSpacing: '-0.03em' }}
           >
-            I ship.<br />
-            <em style={{ color: 'var(--rust)', fontStyle: 'italic' }}>For real.</em>
+            I don't just code.<br />
+            <em style={{ color: 'var(--rust)', fontStyle: 'italic' }}>I engineer solutions.</em>
           </h2>
 
           <p
             className="font-body text-brown-mid mb-8"
             style={{ fontSize: '1rem', lineHeight: 1.95 }}
           >
-            Final-year CS student at RGUKT Srikakulam, graduating mid-2026.
-            I've built <strong style={{ color: 'var(--ink)', fontWeight: 500 }}>three real platforms</strong> from
-            scratch — a blockchain certificate system, an AI telehealth app, and a full-stack restaurant tool.
-            Each one shipped, tested, and measured.
+            I’m a final-year CS student at RGUKT Srikakulam (Class of 2026) obsessed with the transition from 'it works locally' to 'it scales globally.'
+            I’ve moved beyond tutorials to design and ship production-grade platforms—tackling everything from blockchain immutability to AI-driven patient triage.
+            Every line of code I write is measured by its performance, security, and real-world utility.
             <br /><br />
-            Looking for a full-stack or backend engineering role where I can keep building things that matter.
+            Looking for a full-stack or backend engineering role where I can keep building systems that matter.
           </p>
 
           {/* Fact table */}
@@ -124,15 +123,16 @@ const About = () => {
         </div>
 
         {/* Right — photo */}
-        <div ref={rightRef} className="relative flex flex-col gap-6" style={{ paddingLeft: '120px' }}>
+        <div ref={rightRef} className="relative flex flex-col items-center lg:items-end gap-6">
           <div
             ref={photoRef}
-            className="photo-box overflow-hidden relative h-[550px] w-[550px] sm:w-[300px]"
+            className="photo-box overflow-hidden relative w-full max-w-[400px] lg:max-w-[480px]"
             style={{ aspectRatio: '0.78', background: 'var(--sand)' }}
           >
             <img
               src={photo}
               alt="Alajangi Vidya Sagar"
+              loading="lazy"
               className="w-full h-full object-cover object-top"
               onError={e => { e.target.style.display = 'none'; }}
             />
@@ -153,7 +153,7 @@ const About = () => {
           </div>
 
           <span
-            className="font-mono uppercase"
+            className="font-mono uppercase text-center lg:text-right w-full"
             style={{ fontSize: '0.58rem', letterSpacing: '0.13em', color: 'var(--brown-mid)' }}
           >
             Alajangi Vidya Sagar — 2026

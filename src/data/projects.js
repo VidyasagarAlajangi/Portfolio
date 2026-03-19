@@ -7,9 +7,9 @@ export const projects = [
   {
     id: 1,
     title: 'CertGuard',
-    subtitle: 'Digital Certificate Platform',
+    subtitle: 'Enterprise-Grade Blockchain Verification',
     badge: 'Blockchain',
-    description: 'Issues and verifies digital certificates on-chain. Role-based access for issuers, verifiers, and admins. Cloud document storage on AWS S3. Automated the entire verification pipeline — **cut manual effort by 85%.**',
+    description: 'Engineered a decentralized certificate issuance system that leverages immutable ledgers to eliminate forgery. Integrated AWS S3 for scalable document management, reducing manual verification overhead by 85%.',
     ghostText: '85%',
     stack: ['React.js', 'Node.js', 'AWS S3', 'Blockchain', 'MongoDB'],
     githubLink: 'https://github.com/VidyasagarAlajangi',
@@ -19,9 +19,9 @@ export const projects = [
   {
     id: 2,
     title: 'MedConnect',
-    subtitle: 'Telehealth Platform',
+    subtitle: 'AI-Driven Healthcare Ecosystem',
     badge: 'AI · Healthcare',
-    description: 'AI chatbot powered by Gemini API for symptom analysis and patient triage. Real-time video consultations via Agora SDK, automated appointment scheduling, and a clean patient dashboard. Chatbot hits **87% accuracy** on clinical queries.',
+    description: 'Built a comprehensive telehealth platform integrating Gemini AI for precise patient triage and Agora SDK for low-latency video consultations. Achieving 87% clinical query accuracy, this project bridges the gap between AI and patient care.',
     ghostText: '87%',
     stack: ['React.js', 'Node.js', 'Gemini API', 'Agora SDK', 'MongoDB'],
     githubLink: 'https://github.com/VidyasagarAlajangi',
@@ -31,9 +31,9 @@ export const projects = [
   {
     id: 3,
     title: 'FoodFrenzy',
-    subtitle: 'Restaurant Management Platform',
+    subtitle: 'Scalable Restaurant Infrastructure',
     badge: 'Java · Spring',
-    description: 'Full-stack restaurant tool with menu browsing, cart, and ordering. Java Spring Boot MVC backend with clean RESTful APIs, MongoDB for persistence, and a React frontend styled with Tailwind. Fully debugged, Postman-tested, production-ready.',
+    description: 'Architected a high-concurrency ordering system using Spring Boot and MongoDB. Focused on clean code and RESTful standards, this platform handles complex menu hierarchies and real-time cart synchronization.',
     ghostText: 'MVC',
     stack: ['Java', 'Spring Boot', 'React.js', 'MongoDB', 'Tailwind'],
 
@@ -42,9 +42,9 @@ export const projects = [
   {
     id: 4,
     title: 'ARC Trust',
-    subtitle: 'Non profit organization website',
-    badge: 'React.js - Node.js',
-    description: 'A modern, responsive website for ARC Trust, a non-profit organization. Features include event management, donation tracking, and volunteer coordination. Built with React.js and Node.js, this platform streamlines operations and enhances community engagement.',
+    subtitle: 'Community Impact Platform',
+    badge: 'Full-Stack',
+    description: 'Designed and deployed a modern digital home for ARC Trust, coordinating volunteer efforts and donation tracking. This full-stack solution streamlined non-profit operations and boosted community engagement.',
     ghostText: 'ARC',
     stack: ['React.js', 'Node.js', 'MongoDB', 'Tailwind'],
     githubLink: 'https://github.com/Arctrust',

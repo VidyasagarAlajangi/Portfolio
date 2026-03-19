@@ -276,6 +276,7 @@ const Projects = () => {
                 <img
                   src={proj.screenshot}
                   alt={proj.title}
+                  loading="lazy"
                   style={{
                     width: '100%',
                     height: '100%',
