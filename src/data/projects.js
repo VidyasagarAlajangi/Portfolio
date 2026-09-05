@@ -13,7 +13,7 @@ export const projects = [
     ghostText: '85%',
     stack: ['React.js', 'Node.js', 'AWS S3', 'Blockchain', 'MongoDB'],
     githubLink: 'https://github.com/VidyasagarAlajangi',
-    liveLink: 'certguard-1.onrender.com',
+    liveLink: 'https://certguard-1.onrender.com',
     screenshot: certguard,
   },
   {
@@ -25,7 +25,7 @@ export const projects = [
     ghostText: '87%',
     stack: ['React.js', 'Node.js', 'Gemini API', 'Agora SDK', 'MongoDB'],
     githubLink: 'https://github.com/VidyasagarAlajangi',
-    liveLink: 'medconnect-ahup.onrender.com',
+    liveLink: 'https://medconnect-ahup.onrender.com',
     screenshot: medconnect,
   },
   {
@@ -48,7 +48,7 @@ export const projects = [
     ghostText: 'ARC',
     stack: ['React.js', 'Node.js', 'MongoDB', 'Tailwind'],
     githubLink: 'https://github.com/Arctrust',
-    liveLink: 'arctrust.vercel.app',
+    liveLink: 'https://arctrust.vercel.app',
     screenshot: arc,
   }
 ];
